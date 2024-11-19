@@ -1,5 +1,9 @@
 ## TopoApp
 
+---
+
+*Only a Front-End Mock-up so far, the idea is:*
+
 TopoRemedialAction / Gridstatealteration
 
 - Generate Testdata for CGMES (NetworkCodeProfiles)
