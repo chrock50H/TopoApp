@@ -10,7 +10,7 @@ from datetime import datetime, date
 st.set_page_config(page_title="Topo-Schedule", layout="wide")
 
 # Load CSV data
-file_path = r"/data/Cross-border Physical Flows_202312312300-202412312300.csv"
+file_path = r"/Topo_App/data/Cross-border Physical Flows_202312312300-202412312300.csv"
 
 try:
     # Read the CSV file, specifying that the header is on the first row
@@ -152,9 +152,6 @@ if st.sidebar.button("Load"):
     except FileNotFoundError:
         st.sidebar.error(f"No data file found for {selected_date}.")
 
-
-      
-
 # Search fields
 col1, col2, col3, col4 = st.columns(4)
 mRID_search = col1.text_input("mRID")
@@ -178,11 +175,7 @@ st.session_state['filtered_df'] = filtered_df.copy()
 
 st.markdown("---")
 
-
-
-  
-
-### Element Status Table ###
+# Element Status Table
 st.write("## Element Status Table")
 
 # Display success message if status was updated
@@ -252,18 +245,8 @@ if st.button("Run Powerflow"):
 
 st.markdown("---")
 
-
-
-
-
-
-
-  
-
-### Cross-Border Physical Flows Table and Diagram ###
-
-
-  st.write("## Cross-Border Flow")
+# Cross-Border Physical Flows Table and Diagram
+st.write("## Cross-Border Flow")
 
 # Determine row ranges based on powerflow_run
 if st.session_state.powerflow_run == 0:
@@ -360,9 +343,6 @@ with col2:
 
 st.markdown("---")
 
-
- ### Export ### 
-
 st.write("## Export ##")
 
 st.write("")
@@ -383,7 +363,7 @@ with col3:
         st.success("Upload confirmed.")
         st.code("ID: #_7336296309712345", language='text')
 with col6:
-	st.image("/home/chris/Schreibtisch/01_scripts/data/50Hertz.png", use_container_width=True)
+	st.image("/Topo_App/data/50Hertz.png", use_container_width=True)
         
         
         
