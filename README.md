@@ -4,7 +4,7 @@
 
 ### Only a Front-End, the idea is
 
-for TopoRemedialAction / Gridstatealteration:
+for TopoRemedialAction, Modelimprovements or planned outages by OPC:
 
 - Generate Testdata
 - Backoffice Preparation
