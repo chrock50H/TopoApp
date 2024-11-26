@@ -6,11 +6,13 @@
 
 for TopoRemedialAction / Gridstatealteration:
 
-- Generate Testdata for CGMES (NetworkCodeProfiles)
-- Backoffice Calculations, preparing topo RA
-- Data Exchange Crossborder through randomized (hashed) DifferenceModels (RemedialActionSchedule)
-- it should be able load all kinds of timeseries / schedules an generate Delta Timeseries for CSA-DAtA-Exchange.-
-   
-Backoffice Implementation in python, some other options might follow. Shoud be locally deployable in different environments.
+- Generate Testdata
+- Backoffice Preparation
+- Data Exchange via randomized (hashed) Timeseries exported as DifferenceModels (Delta-Schedule)
+- Future: Load all kinds of Timeseries / Schedules
+- Implementation in python, some other options might follow.
+- Shoud be locally deployable in different sandboxed environtments or just as a kiosk stream keeping track of changes made by different internal processes.
+  
+Import/Export Option will follow as CIMXML, .csv or DiffModel
 
 ---
